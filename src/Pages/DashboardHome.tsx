@@ -24,7 +24,7 @@ const DashboardHome = () => {
                 <PiNoteDuotone className="viewIcons" />
               </div>
               <div className="viewText">
-                <h4>Total LoadingSlip</h4>
+                <h4>Total Delivery</h4>
                 <p>20 </p>
               </div>
             </div>
@@ -33,7 +33,7 @@ const DashboardHome = () => {
                 <AiOutlineRise className="viewIcons" />
               </div>
               <div className="viewText">
-                <h4>Invoiced LoadingSlip</h4>
+                <h4>Sucessful Delivery</h4>
                 <p>11</p>
               </div>
             </div>
@@ -42,8 +42,17 @@ const DashboardHome = () => {
                 <IoIosCash className="viewIcons" />
               </div>
               <div className="viewText">
-                <h4>Not Invoiced LoadingSlip</h4>
+                <h4>Pending Delivery</h4>
                 <p>10</p>
+              </div>
+            </div>
+            <div className="viewItem">
+              <div className="viewIcon">
+                <IoIosCash className="viewIcons" />
+              </div>
+              <div className="viewText">
+                <h4>Decline Delivery</h4>
+                <p>4</p>
               </div>
             </div>
           </div>
@@ -53,7 +62,7 @@ const DashboardHome = () => {
                 <AiOutlineInbox className="viewIcons" />
               </div>
               <div className="viewText">
-                <h4>Total Requisitions</h4>
+                <h4>Total Customerr</h4>
                 <p>40 </p>
               </div>
             </div>
@@ -62,7 +71,7 @@ const DashboardHome = () => {
                 <AiOutlineCodeSandbox className="viewIcons" />
               </div>
               <div className="viewText">
-                <h4>Approve Requisitions</h4>
+                <h4>Active Customer</h4>
                 <p>20</p>
               </div>
             </div>
@@ -71,17 +80,8 @@ const DashboardHome = () => {
                 <AiOutlineCodeSandbox className="viewIcons" />
               </div>
               <div className="viewText">
-                <h4>UnApprove Requisitions</h4>
+                <h4>UnActive Customer</h4>
                 <p>7</p>
-              </div>
-            </div>
-            <div className="viewItem">
-              <div className="viewIcon">
-                <FiRefreshCw className="viewIcons" />
-              </div>
-              <div className="viewText">
-                <h4>Cancelled Requisition </h4>
-                <p>3</p>
               </div>
             </div>
           </div>
