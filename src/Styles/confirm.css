@@ -1,0 +1,50 @@
+.det {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5em;
+  margin-top: 3em;
+  margin-left: 3em;
+}
+.orDetails {
+  width: 40%;
+}
+.detailsCap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detailsCap h2 {
+  color: #474747;
+  font-family: "Lato", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+.detailsCap p {
+  color: #474747;
+  font-family: "Lato", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+.productImage {
+  position: relative;
+  width: 206.587px;
+  height: 195.003px;
+  flex-shrink: 0;
+  border: 1px dashed #474747;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.imgIcon {
+  font-size: 100px;
+  color: #4f4f4f;
+}

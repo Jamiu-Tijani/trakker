@@ -26,9 +26,9 @@ const navData = [
     link: "/dashboard/order",
   },
   {
-    name: "Quantity Update history",
+    name: "Sales",
     icons: <RxDashboard />,
-    link: "/dashboard/quantity",
+    link: "/dashboard/sales",
   },
   {
     name: "Price Update History",
