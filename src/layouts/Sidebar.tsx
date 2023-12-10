@@ -31,7 +31,7 @@ const navData = [
     link: "/dashboard/sales",
   },
   {
-    name: "Price Update History",
+    name: "Finance",
     icons: <GrHistory />,
     link: "/dashboard/price",
   },

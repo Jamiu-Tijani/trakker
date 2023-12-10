@@ -9,6 +9,7 @@ import DashboardHome from "./Pages/DashboardHome";
 import Order from "./Pages/Order";
 import Confirm from "./Pages/Confirm";
 import Sales from "./Pages/Sales";
+import Finance from "./Pages/Finance";
 
 function App() {
   const token = window.localStorage.getItem("token");
@@ -22,6 +23,7 @@ function App() {
           <Route path="order" element={<Order />} />
           <Route path="confirm" element={<Confirm />} />
           <Route path="sales" element={<Sales />} />
+          <Route path="finace" element={<Finance/>}/>
         </Route>
       </Routes>
     </Router>
