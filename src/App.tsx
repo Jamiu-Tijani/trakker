@@ -7,6 +7,7 @@ import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
 import DashboardHome from "./Pages/DashboardHome";
 import Order from "./Pages/Order";
+import Confirm from "./Pages/Confirm";
 
 function App() {
   const token = window.localStorage.getItem("token");
@@ -18,6 +19,7 @@ function App() {
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardHome />} />
           <Route path="order" element={<Order />} />
+          <Route path="confirm" element={<Confirm />} />
         </Route>
       </Routes>
     </Router>

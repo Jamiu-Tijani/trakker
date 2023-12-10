@@ -47,8 +47,7 @@ const AddProduct = ({ handleAddPro }: any) => {
 
         <div className="catModalBtn">
           <button className="catBtn1">
-            <Link to="/confirm" style={{ color: "#fff" }}>
-              {" "}
+            <Link to="/dashboard/confirm" style={{ color: "#fff" }}>
               Confirm Order
             </Link>
           </button>
