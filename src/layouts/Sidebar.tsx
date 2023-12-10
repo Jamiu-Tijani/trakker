@@ -21,9 +21,9 @@ const navData = [
     link: "/dashboard",
   },
   {
-    name: "Product",
+    name: "Bulk Orders",
     icons: <GrAddCircle />,
-    link: "/dashboard/product",
+    link: "/dashboard/order",
   },
   {
     name: "Quantity Update history",
@@ -34,61 +34,6 @@ const navData = [
     name: "Price Update History",
     icons: <GrHistory />,
     link: "/dashboard/price",
-  },
-  {
-    name: "Customer",
-    icons: <TbUsersGroup />,
-    link: "/dashboard/customer",
-  },
-  {
-    name: "Create Requisition",
-    icons: <GrNotes />,
-    link: "/dashboard/requisition",
-  },
-  {
-    name: "Approval",
-    icons: <TbHistory />,
-    link: "/dashboard/approve",
-  },
-  {
-    name: "Loading Slip",
-    icons: <PiNotepadBold />,
-    link: "/dashboard/loadingtable",
-  },
-  {
-    name: "Invoice",
-    icons: <PiNotePencil />,
-    link: "/dashboard/invoicetable",
-  },
-  {
-    name: "Report",
-    icons: <MdOutlineEventNote />,
-    link: "/dashboard/report",
-  },
-  {
-    name: "Activity Log",
-    icons: <RxActivityLog />,
-    link: "/dashboard/activitylogs",
-  },
-  {
-    name: "Bank",
-    icons: <AiOutlineBank />,
-    link: "/dashboard/bank",
-  },
-  {
-    name: "Transport",
-    icons: <FiTruck />,
-    link: "/dashboard/transport",
-  },
-  {
-    name: "User Account Profile",
-    icons: <AiOutlineUsergroupAdd />,
-    link: "/dashboard/userstaff",
-  },
-  {
-    name: "Settings",
-    icons: <AiOutlineSetting />,
-    link: "/dashboard/settings",
   },
 ];
 
