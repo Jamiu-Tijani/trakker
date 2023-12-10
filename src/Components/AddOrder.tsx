@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../Styles/Modal.css";
 import { ImCancelCircle } from "react-icons/im";
 import { CircularProgress } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const AddProduct = ({ handleAddPro }: any) => {
   return (
@@ -45,7 +46,12 @@ const AddProduct = ({ handleAddPro }: any) => {
         </div>
 
         <div className="catModalBtn">
-          <button className="catBtn1">Confirm Order</button>
+          <button className="catBtn1">
+            <Link to="/confirm" style={{ color: "#fff" }}>
+              {" "}
+              Confirm Order
+            </Link>
+          </button>
           <button className="catBtn2" onClick={handleAddPro}>
             Cancel
           </button>
