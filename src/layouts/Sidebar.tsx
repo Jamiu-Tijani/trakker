@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { RxDashboard, RxActivityLog } from "react-icons/rx";
 import { GrAddCircle, GrHistory, GrNotes } from "react-icons/gr";
 import { TbHistory, TbUsersGroup } from "react-icons/tb";
@@ -11,8 +11,6 @@ import {
   AiOutlineUsergroupAdd,
   AiOutlineSetting,
 } from "react-icons/ai";
-// import logo from "../asset/Image/logo1.png";
-// import menu from "../asset/Image/menu.png";
 import "../Styles/SideBar.css";
 import { Link } from "react-router-dom";
 
@@ -99,7 +97,6 @@ const SideBar = ({ handleChange, isOpen, handleMenuItemClick }: any) => {
   return (
     <div className={`${isOpen ? "activeSide" : "side"}`}>
       <div className="log">
-        <img alt="" className="logoImg" />
         <img alt="" onClick={handleChange} className="ham" />
       </div>
       <div className="line"></div>
