@@ -1,270 +1,257 @@
 .fullBoard {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 99.2vw;
-    overflow-x: hidden;
-  }
-  .boardPart {
-    width: calc(100% - 300px) !important;
-    left: 300px;
-    margin-left: auto;
-    transition: all 0.3s ease-in-out;
-  }
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 99.2vw;
+  overflow-x: hidden;
+}
+.boardPart {
+  width: calc(100% - 300px);
+  left: 300px;
+  margin-left: auto;
+  transition: all 0.3s ease-in-out;
+}
+.boardPartAct {
+  width: calc(100% - 70px);
+  left: 70px;
+  margin-left: auto;
+  transition: all 0.3s ease-in-out;
+}
+.board {
+  width: 100%;
+  overflow-x: hidden;
+  /* background-color: rebeccapurple; */
+}
+.top {
+  border-bottom: 1px solid rgba(11, 119, 197, 0.24);
+  background: #fff;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  height: 85px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 2em; */
+}
+
+.top h2 {
+  margin-left: 1.3em;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.top > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.top > div img {
+  width: 44px;
+  height: 44px;
+}
+
+.icon {
+  font-size: 25px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.searchInput {
+  width: 348px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 200px;
+  border: 1px solid rgba(11, 119, 197, 0.16);
+  margin-left: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchInput input {
+  width: 80%;
+  height: 90%;
+  border: none;
+  outline: none;
+  border-radius: 200px;
+  padding-left: 1em;
+}
+
+.searchInputIcon {
+  width: 10%;
+  font-size: 25px;
+  color: #212121;
+}
+
+.boardBody {
+  background: rgba(217, 217, 217, 0.35);
+  padding: 1em;
+}
+
+.boardBody h2 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.overview {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.overCon {
+  width: 450px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em .5em;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.viewItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 218px;
+}
+
+.viewIcon {
+  border-radius: 6px;
+  background: rgba(11, 119, 197, 0.2);
+  width: 45px;
+  height: 35px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overCon:last-child .viewIcon {
+  border-radius: 6px;
+  background: rgba(237, 42, 254, 0.2);
+  width: 45px;
+  height: 35px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overCon:last-child .viewIcons {
+  color: #970fa3;
+}
+
+.viewIcons {
+  color: #0d6baf;
+  font-size: 20px;
+}
+
+.viewText h4 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  margin-bottom: 0.2em;
+}
+.viewText p {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.table {
+  width: 100%;
+  background-color: #fff;
+  height: 500px;
+  margin-top: 2em;
+}
+
+@media (max-width: 900px) {
   .boardPartAct {
     width: calc(100% - 70px);
-    left: 70px;
     margin-left: auto;
     transition: all 0.3s ease-in-out;
   }
-  .board {
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: #f6f7f9;
+  .boardPart {
+    width: calc(100% - 70px);
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
   }
-  .topNav {
-    background: #fff;
-  }
-  .top {
-    background-color: transparent;
-    border-bottom: 1px solid rgba(11, 119, 197, 0.24);
-    box-shadow: 0px 4px 12px 0px rgba(71, 71, 71, 0.25);
-    height: 85px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .top p {
-    margin-left: 1.4em;
-    color: #474747;
-    font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .top h2 {
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 500;
+    margin-left: 0.6em;
   }
+.top {
+  height: 62px;
+}
   .top > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-  }
-  
-  .top > div img {
-    width: 22px;
-    height: 22px;
-  }
-  .profilePic span {
-    color: #474747;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-  .profilePic {
-    border-radius: 32px;
-    background: #f6f7f9;
-    width: 74px;
-    height: 32px;
-    display: inline-flex;
-    padding: 0px 8px;
-    align-items: center;
     gap: 10px;
+  }
+  .top > div img {
+    width: 34px;
+    height: 34px;
   }
   .icon {
     font-size: 20px;
   }
-  .bottom {
-    background: transparent;
+
+  .search {
+    /* flex-direction: column; */
+    height: 70px;
+  }
+
+  .searchInput {
+    width: 60%;
     height: 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2em 0 0em;
-    padding-bottom: 1em;
+    margin-left: 0.6em;
   }
-  .bottom h2 {
-    margin-left: 1.4em;
-    color: #000;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .dashboardDetails {
-    height: 200px;
-    width: 95%;
-    margin: 2em auto 0;
-    padding: 1em 2em;
-    background: #fff;
-  }
-  .dashboardDetails h2 {
-    color: #474747;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    width: 95%;
-    margin-bottom: 1em;
-  }
-  .dailyDetails {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 4em;
-    flex-wrap: wrap;
-    border-radius: 6px;
-  }
-  .total {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0.5em;
-  }
-  .totalIcon {
-    display: flex;
-    width: 48px;
-    height: 48px;
-    padding: 12px;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-  }
-  .total .title span {
-    color: rgba(71, 71, 71, 0.8);
+  .searchInputIcon {
     font-size: 16px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    margin-bottom: 1em;
   }
-  .total .title p {
-    color: #474747;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-  
-  .viewIcon {
-    border-radius: 6px;
-    background: rgba(11, 119, 197, 0.2);
-    width: 45px;
-    height: 35px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .overCon:last-child .viewIcon {
-    border-radius: 6px;
-    background: rgba(237, 42, 254, 0.2);
-    width: 45px;
-    height: 35px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .overCon:last-child .viewIcons {
-    color: #970fa3;
-  }
-  
-  .viewIcons {
-    color: #0d6baf;
-    font-size: 20px;
-  }
-  
-  .viewText h4 {
+
+  .boardBody h2 {
     color: #000;
     font-family: "Montserrat", sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin: 0;
-    margin-bottom: 0.2em;
   }
-  .viewText p {
-    color: #000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 0;
-  }
-  
-  .table {
+  .overCon {
     width: 100%;
-    background-color: #fff;
-    height: 500px;
-    margin-top: 2em;
   }
-  
-  @media (max-width: 900px) {
-    .boardPartAct {
-      width: calc(100% - 70px);
-      margin-left: auto;
-      transition: all 0.3s ease-in-out;
-    }
-    .boardPart {
-      width: calc(100% - 70px);
-      margin-left: auto;
-      transition: all 0.3s ease-in-out;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .top h2 {
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      margin-left: 0.6em;
-    }
-    .top {
-      height: 62px;
-    }
-    .top > div {
-      gap: 10px;
-    }
-    .top > div img {
-      width: 34px;
-      height: 34px;
-    }
-    .icon {
-      font-size: 20px;
-    }
-  
-    .search {
-      /* flex-direction: column; */
-      height: 70px;
-    }
-  
-    .searchInput {
-      width: 60%;
-      height: 30px;
-      margin-left: 0.6em;
-    }
-    .searchInputIcon {
-      font-size: 16px;
-    }
-  
-    .boardBody h2 {
-      color: #000;
-      font-family: "Montserrat", sans-serif;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-    .overCon {
-      width: 100%;
-    }
-  }
-  
+}

@@ -94,108 +94,6 @@ const navData = [
   },
 ];
 
-const SeniorStaffnavData = [
-  {
-    name: "Dashboard",
-    icons: <RxDashboard />,
-    link: "/dashboard",
-  },
-  {
-    name: "Product",
-    icons: <GrAddCircle />,
-    link: "/dashboard/product",
-  },
-
-  {
-    name: "Customer",
-    icons: <TbUsersGroup />,
-    link: "/dashboard/customer",
-  },
-  {
-    name: "Create Requisition",
-    icons: <GrNotes />,
-    link: "/dashboard/requisition",
-  },
-  {
-    name: "Loading Slip",
-    icons: <PiNotepadBold />,
-    link: "/dashboard/loadingtable",
-  },
-  {
-    name: "Invoice",
-    icons: <PiNotePencil />,
-    link: "/dashboard/invoicetable",
-  },
-  {
-    name: "Bank",
-    icons: <AiOutlineBank />,
-    link: "/dashboard/bank",
-  },
-  {
-    name: "Transport",
-    icons: <FiTruck />,
-    link: "/dashboard/transport",
-  },
-  {
-    name: "User Account Profile",
-    icons: <AiOutlineUsergroupAdd />,
-    link: "/dashboard/userstaff",
-  },
-];
-const StaffnavData = [
-  {
-    name: "Dashboard",
-    icons: <RxDashboard />,
-    link: "/dashboard",
-  },
-  {
-    name: "Product",
-    icons: <GrAddCircle />,
-    link: "/dashboard/product",
-  },
-  {
-    name: "Customer",
-    icons: <TbUsersGroup />,
-    link: "/dashboard/customer",
-  },
-  {
-    name: "Create Requisition",
-    icons: <GrNotes />,
-    link: "/dashboard/requisition",
-  },
-  {
-    name: "Loading Slip",
-    icons: <PiNotepadBold />,
-    link: "/dashboard/loadingtable",
-  },
-  {
-    name: "Invoice",
-    icons: <PiNotePencil />,
-    link: "/dashboard/invoicetable",
-  },
-  {
-    name: "Report",
-    icons: <MdOutlineEventNote />,
-    link: "/dashboard/report",
-  },
-
-  {
-    name: "Bank",
-    icons: <AiOutlineBank />,
-    link: "/dashboard/bank",
-  },
-  {
-    name: "Transport",
-    icons: <FiTruck />,
-    link: "/dashboard/transport",
-  },
-  {
-    name: "User Account Profile",
-    icons: <AiOutlineUsergroupAdd />,
-    link: "/dashboard/userstaff",
-  },
-];
-
 const SideBar = ({ handleChange, isOpen, handleMenuItemClick }: any) => {
   const user = JSON.parse(window.localStorage.getItem("userData") as string);
   return (
@@ -207,29 +105,13 @@ const SideBar = ({ handleChange, isOpen, handleMenuItemClick }: any) => {
       <div className="line"></div>
 
       <ul>
-        {user.account.role === "admin"
-          ? navData.map((nav, ind) => (
-              <li key={ind} onClick={handleMenuItemClick}>
-                <Link to={`${nav.link}`}>
-                  {nav.icons} <span>{nav.name}</span>
-                </Link>
-              </li>
-            ))
-          : user.account.role === "seniorStaff"
-          ? SeniorStaffnavData.map((nav, ind) => (
-              <li key={ind} onClick={handleMenuItemClick}>
-                <Link to={`${nav.link}`}>
-                  {nav.icons} <span>{nav.name}</span>
-                </Link>
-              </li>
-            ))
-          : StaffnavData.map((nav, ind) => (
-              <li key={ind} onClick={handleMenuItemClick}>
-                <Link to={`${nav.link}`}>
-                  {nav.icons} <span>{nav.name}</span>
-                </Link>
-              </li>
-            ))}
+        {navData.map((nav, ind) => (
+          <li key={ind} onClick={handleMenuItemClick}>
+            <Link to={`${nav.link}`}>
+              {nav.icons} <span>{nav.name}</span>
+            </Link>
+          </li>
+        ))}
 
         <div className="line"></div>
 

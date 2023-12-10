@@ -60,53 +60,50 @@ const Login = () => {
   return (
     <div className="auth">
       <div className="left">
-        <div>
-          {/* <img src={logo} alt="" /> */}
-
-          <div className="leftCon">
-            <h2>Business Login</h2>
-            <p>Welcome to One flare inventory solution</p>
-            <form>
-              <div className="input">
-                <label>Email</label>
+        <div className="leftCon">
+          <h2>Login</h2>
+          <p>Welcome to Trakker</p>
+          <form>
+            <div className="input">
+              <label>Email</label>
+              <input
+                className="inputField"
+                type="email"
+                placeholder="Test2@test"
+                name="email"
+                value={sign.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input">
+              <label>Password</label>
+              <div className="inputPass">
                 <input
-                  className="inputField"
-                  type="email"
-                  placeholder="Test2@test"
-                  name="email"
-                  value={sign.email}
+                  type={passwordVisible ? "text" : "password"}
+                  placeholder="********"
+                  name="password"
+                  value={sign.password}
                   onChange={handleChange}
                 />
-              </div>
-              <div className="input">
-                <label>Password</label>
-                <div className="inputPass">
-                  <input
-                    type={passwordVisible ? "text" : "password"}
-                    placeholder="********"
-                    name="password"
-                    value={sign.password}
-                    onChange={handleChange}
+                {passwordVisible ? (
+                  <AiFillEyeInvisible
+                    className="loginEye"
+                    onClick={togglePasswordVisibility}
                   />
-                  {passwordVisible ? (
-                    <AiFillEyeInvisible
-                      className="loginEye"
-                      onClick={togglePasswordVisibility}
-                    />
-                  ) : (
-                    <AiFillEye
-                      className="loginEye"
-                      onClick={togglePasswordVisibility}
-                    />
-                  )}
-                </div>
-                <Link to="/reset" className="forget">
-                  Forget Password
-                </Link>
+                ) : (
+                  <AiFillEye
+                    className="loginEye"
+                    onClick={togglePasswordVisibility}
+                  />
+                )}
               </div>
+              <Link to="/reset" className="forget">
+                Forget Password
+              </Link>
+            </div>
 
-              <button type="submit">
-                {/* {loading ? (
+            <button type="submit">
+              {/* {loading ? (
                   <CircularProgress
                     style={{ color: "#fff", width: "25px", height: "25px" }}
                   />
@@ -114,28 +111,12 @@ const Login = () => {
                   "Login"
                 )} */}
 
-                <Link to="/stafflogin" className="staff">
-                  Login
-                </Link>
-              </button>
-            </form>
-          </div>
+              <Link to="/dashboard" className="staff">
+                Login
+              </Link>
+            </button>
+          </form>
         </div>
-      </div>
-
-      <div className="right">
-        <div className="rightCon">
-          <h4>Oneflare Business Suite</h4>
-
-          <h2>
-            Help manage your <span> inventory </span> with <span> Ease </span> &
-            Get up to date <span className="rep">reports</span>
-          </h2>
-
-          <p>It’s that simple</p>
-        </div>
-
-        {/* <img src={logoBlack} alt="" className="logoBottom" /> */}
       </div>
     </div>
   );

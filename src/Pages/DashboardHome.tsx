@@ -10,10 +10,7 @@ import { PiNoteDuotone } from "react-icons/pi";
 import { IoIosCash } from "react-icons/io";
 import { FiRefreshCw } from "react-icons/fi";
 
-
 const DashboardHome = () => {
-
- 
   return (
     <div className="board">
       <TopNav title="Dashboard" />
