@@ -122,7 +122,6 @@
   cursor: pointer;
 }
 .catBtn1 {
-  width: 120px;
   height: 30px;
   flex-shrink: 0;
   background: #0b77c5;
