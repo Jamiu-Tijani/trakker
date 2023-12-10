@@ -53,6 +53,24 @@ const Product = ({ isOpen }: any) => {
               <td>number</td>
               <td>30</td>
             </tr>
+            <tr className="Tbody">
+              <td className="sn">2</td>
+              <td>Rice</td>
+              <td>Big</td>
+              <td>1900 </td>
+              <td>Food</td>
+              <td>dirika</td>
+              <td>70</td>
+            </tr>
+            <tr className="Tbody">
+              <td className="sn">3</td>
+              <td>Memory</td>
+              <td>small</td>
+              <td>2500 </td>
+              <td>Tech</td>
+              <td>ram</td>
+              <td>10</td>
+            </tr>
           </table>
         </div>
       </div>
