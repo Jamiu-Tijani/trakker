@@ -43,6 +43,14 @@
   font-weight: 500;
   line-height: normal;
 }
+.top h2 p {
+  color: #0d6baf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 .top > div {
   display: flex;

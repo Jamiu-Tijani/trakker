@@ -6,9 +6,12 @@ import { Link } from "react-router-dom";
 import { FaRegMap } from "react-icons/fa";
 
 const Tracking = () => {
+  const orderNumber = <p style={{ color: "blue" }}>#22346</p>;
+
   return (
     <div className="board">
-      <TopNav title={`Track Order ${<p style={{color:"blue"}}>#22346</p>}` }/>
+      <TopNav title={`Track Order ${orderNumber.props.children}`} />
+
       <div className="product">
         <div className="proc">
           <h2>Tracking Process</h2>
