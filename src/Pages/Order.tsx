@@ -1,18 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import TopNav from "../layouts/TopNav";
-import { AiOutlinePlusCircle } from "react-icons/ai";
 import "../Styles/order.css";
-import AddOrder from "../Components/AddOrder";
-import { BsSearch, BsPencil } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Product = ({ isOpen }: any) => {
-  const [proAddModal, setProAddModal] = useState(false);
-
-  const handleAddPro = () => {
-    setProAddModal(!proAddModal);
-  };
-
   return (
     <div className="board">
       <TopNav title="Buld Order" />

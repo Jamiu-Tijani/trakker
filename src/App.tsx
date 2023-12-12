@@ -10,6 +10,7 @@ import Order from "./Pages/Order";
 import Confirm from "./Pages/Confirm";
 import Sales from "./Pages/Sales";
 import Finance from "./Pages/Finance";
+import Tracking from "./Pages/Tracking";
 
 function App() {
   const token = window.localStorage.getItem("token");
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="login" element={<Login />} />
         <Route path="/" element={<Order />} />
+        <Route path="/track" element={<Tracking />} />
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardHome />} />
           <Route path="confirm" element={<Confirm />} />
