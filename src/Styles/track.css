@@ -5,6 +5,13 @@
   width: 80%;
   margin: 0 auto 5em;
 }
+.proc {
+    width: 98%;
+    margin: 2em auto;
+    background-color: #f5f5f5;
+    padding: 1em .4em;
+    /* height: 300pxz; */
+}
 .proCircle {
   width: 20px;
   height: 20px;
@@ -20,8 +27,8 @@
 
 .ciDetails {
   position: absolute;
-  top: 180%;
-  left: 25%;
+  top: 120%;
+  left: -100%;
   display: flex;
   align-items: center;
   justify-content: center;
