@@ -4,6 +4,7 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 import "../Styles/order.css";
 import AddOrder from "../Components/AddOrder";
 import { BsSearch, BsPencil } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Product = ({ isOpen }: any) => {
   const [proAddModal, setProAddModal] = useState(false);
@@ -14,67 +15,59 @@ const Product = ({ isOpen }: any) => {
 
   return (
     <div className="board">
-      <TopNav title="Product" />
+      <TopNav title="Buld Order" />
       <div className="product">
-        <div className="productBtn">
-          <button onClick={handleAddPro} className="productBtn1">
-            <AiOutlinePlusCircle />
-            Order Delivery
-          </button>
-        </div>
-        <div className="method">
-          <div className="apInput">
+        <div className="catModalInput branchInput">
+          <h3>Order details</h3>
+          <div className="div modalDouble addPrroduct">
+            <select name="name">
+              <option value="">Select Product</option>
+              <option value="">Biscuit</option>
+              <option value="">Sweet</option>
+              <option value="">RIce</option>
+              <option value="">Card</option>
+            </select>
+          </div>
+          <div className="div modalDouble addProduct">
+            <input type="text" placeholder="Quantity" name="quantity" />
+            <input type="text" placeholder="Description" name="description" />
+          </div>
+          <div className="div modalDouble addProduct">
+            <input type="text" placeholder="User Name" name="unitOfMeasure" />
             <input
               type="text"
-              placeholder="search"
-              // onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Phone Number"
+              name="unitOfMeasure"
             />
-            <BsSearch className="apIcon" />
+          </div>
+          <div className="div modalDouble addProduct">
+            <input type="text" placeholder="Pick up Location" name="selling" />
+
+            <input type="text" placeholder="Drop of Location" name="category" />
+          </div>
+          <div className="productBtn">
+            <button className="productBtn1">
+              <Link style={{ textDecoration: "none", color: "white" }} to="/">
+                Order Delivery
+              </Link>
+            </button>
           </div>
         </div>
-
-        <div className="proDuctTable">
-          <table className="inTable">
-            <tr className="heTable poHead">
-              <th className="sn">S/N</th>
-              <th>Product Name</th>
-              <th>Description</th>
-              <th>Unit Price</th>
-              <th>Type/Categories</th>
-              <th>Unit of Measurement</th>
-              <th>Quantity</th>
-            </tr>
-            <tr className="Tbody">
-              <td className="sn">1</td>
-              <td>Biscuit</td>
-              <td>Big</td>
-              <td>500 </td>
-              <td>snack</td>
-              <td>number</td>
-              <td>30</td>
-            </tr>
-            <tr className="Tbody">
-              <td className="sn">2</td>
-              <td>Rice</td>
-              <td>Big</td>
-              <td>1900 </td>
-              <td>Food</td>
-              <td>dirika</td>
-              <td>70</td>
-            </tr>
-            <tr className="Tbody">
-              <td className="sn">3</td>
-              <td>Memory</td>
-              <td>small</td>
-              <td>2500 </td>
-              <td>Tech</td>
-              <td>ram</td>
-              <td>10</td>
-            </tr>
-          </table>
+      </div>
+      <div className="line"></div>
+      <div className="product">
+        <div className="catModalInput branchInput">
+          <h3>Track Order</h3>
+          <div className="div modalDouble addProduct">
+            <input type="text" placeholder="Traking ID" name="unitOfMeasure" />
+          </div>
+          <button className="productBtn1">
+            <Link style={{ textDecoration: "none", color: "white" }} to="/">
+              Track
+            </Link>
+          </button>
         </div>
       </div>
-      {proAddModal ? <AddOrder handleAddPro={handleAddPro} /> : null}
     </div>
   );
 };

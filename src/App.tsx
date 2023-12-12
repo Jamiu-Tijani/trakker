@@ -17,13 +17,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="login" element={<Login />} />
+        <Route path="/" element={<Order />} />
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardHome />} />
-          <Route path="order" element={<Order />} />
           <Route path="confirm" element={<Confirm />} />
           <Route path="sales" element={<Sales />} />
-          <Route path="finace" element={<Finance/>}/>
+          <Route path="finace" element={<Finance />} />
         </Route>
       </Routes>
     </Router>
