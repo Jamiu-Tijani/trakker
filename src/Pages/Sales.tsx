@@ -32,8 +32,8 @@ const Sales = ({ isOpen }: any) => {
               <th>Description</th>
               <th>Unit Price</th>
               <th>Type/Categories</th>
-              <th>Unit of Measurement</th>
               <th>Quantity</th>
+              <th>Status</th>
             </tr>
             <tr onClick={handleAddPro} className="Tbody">
               <td className="sn">1</td>
@@ -41,8 +41,8 @@ const Sales = ({ isOpen }: any) => {
               <td>Big</td>
               <td>500 </td>
               <td>snack</td>
-              <td>number</td>
               <td>30</td>
+              <td>pending</td>
             </tr>
             <tr onClick={handleAddPro} className="Tbody">
               <td className="sn">2</td>
@@ -50,8 +50,7 @@ const Sales = ({ isOpen }: any) => {
               <td>Big</td>
               <td>1900 </td>
               <td>Food</td>
-              <td>dirika</td>
-              <td>70</td>
+              <td>70</td> <td>pending</td>
             </tr>
             <tr onClick={handleAddPro} className="Tbody">
               <td className="sn">3</td>
@@ -59,8 +58,7 @@ const Sales = ({ isOpen }: any) => {
               <td>small</td>
               <td>2500 </td>
               <td>Tech</td>
-              <td>ram</td>
-              <td>10</td>
+              <td>10</td> <td>pending</td>
             </tr>
           </table>
         </div>
