@@ -61,7 +61,7 @@ const Product = ({ isOpen }: any) => {
           <div className="div modalDouble addProduct">
             <input type="text" placeholder="Traking ID" name="unitOfMeasure" />
           </div>
-          <button className="productBtn1">
+          <button className="productBtn1" style={{ width: "120px" }}>
             <Link style={{ textDecoration: "none", color: "white" }} to="/">
               Track
             </Link>
