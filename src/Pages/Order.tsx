@@ -38,7 +38,7 @@ const Product = ({ isOpen }: any) => {
           </div>
           <div className="productBtn">
             <button className="productBtn1">
-              <Link style={{ textDecoration: "none", color: "white" }} to="/">
+              <Link style={{ textDecoration: "none", color: "white" }} to="/track">
                 Order Delivery
               </Link>
             </button>
@@ -53,7 +53,7 @@ const Product = ({ isOpen }: any) => {
             <input type="text" placeholder="Traking ID" name="unitOfMeasure" />
           </div>
           <button className="productBtn1" style={{ width: "120px" }}>
-            <Link style={{ textDecoration: "none", color: "white" }} to="/">
+            <Link style={{ textDecoration: "none", color: "white" }} to="/track">
               Track
             </Link>
           </button>

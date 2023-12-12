@@ -1,0 +1,30 @@
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto 5em;
+}
+.proCircle {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 100%;
+  position: relative;
+}
+.proLines {
+  width: 20%;
+  height: 5px;
+  background-color: grey;
+}
+
+.ciDetails {
+  position: absolute;
+  top: 180%;
+  left: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
