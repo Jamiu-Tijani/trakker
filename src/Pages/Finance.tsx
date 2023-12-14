@@ -5,6 +5,7 @@ import "../Styles/order.css";
 import AddOrder from "../Components/AddOrder";
 import { BsSearch, BsPencil } from "react-icons/bs";
 import CheckOrder from "../Components/CheckOrder";
+import FinanceApprove from "../Components/FinanceApprove";
 
 const Finance = () => {
   const [proAddModal, setProAddModal] = useState(false);
@@ -56,7 +57,7 @@ const Finance = () => {
           </table>
         </div>
       </div>
-      {proAddModal ? <CheckOrder handleAddPro={handleAddPro} /> : null}
+      {proAddModal ? <FinanceApprove handleAddPro={handleAddPro} /> : null}
     </div>
   );
 };

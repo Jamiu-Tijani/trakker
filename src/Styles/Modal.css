@@ -222,6 +222,19 @@
 
   cursor: pointer;
 }
+.pop {
+  border: black 2px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.pop img {
+  width: 70%;
+  height: 70%;
+  
+}
 @media (max-width: 1000px) {
 }
 .banTable th:nth-child(2) {
