@@ -24,9 +24,7 @@ function App() {
         <Route path="confirm" element={<Confirm />} />
         <Route path="sales" element={<Sales />} />
         <Route path="finance" element={<Finance />} />
-        <Route path="dashboard" element={<Dashboard />}>
-          <Route index element={<DashboardHome />} />
-        </Route>
+        <Route path="dashboard" element={<DashboardHome />} />
       </Routes>
     </Router>
   );
