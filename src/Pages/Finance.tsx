@@ -28,30 +28,36 @@ const Finance = () => {
           <table className="inTable">
             <tr onClick={handleAddPro} className="heTable poHead">
               <th className="sn">S/N</th>
-              <th>Product Name</th>
               <th>Tracking Number</th>
-              <th>Sales</th>
+              <th>Product Name</th>
+              <th>Order Status</th>
+              <th>Payment</th>
               <th>Status</th>
             </tr>
             <tr onClick={handleAddPro} className="Tbody">
               <td className="sn">1</td>
-              <td>Biscuit</td>
               <td>23486</td>
-              <td>Complete</td>
+              <td>Biscuit</td>
+              <td style={{ color: "green", fontWeight: "800" }}>Complete</td>
+              <td style={{ color: "red", fontWeight: "800" }}>Not Recieved</td>
               <td>pending</td>
             </tr>
             <tr onClick={handleAddPro} className="Tbody">
               <td className="sn">2</td>
-              <td>Rice</td>
               <td>23486</td>
-              <td>Complete</td>
+              <td>Rice</td>
+              <td style={{ color: "green", fontWeight: "800" }}>Complete</td>
+              <td style={{ color: "orange", fontWeight: "800" }}>
+                On Delivery
+              </td>
               <td>pending</td>
             </tr>
             <tr onClick={handleAddPro} className="Tbody">
               <td className="sn">3</td>
-              <td>Memory</td>
               <td>23486</td>
-              <td>Complete</td>
+              <td>Memory</td>
+              <td style={{ color: "green", fontWeight: "800" }}>Complete</td>
+              <td style={{ color: "red", fontWeight: "800" }}>Not Recieved</td>
               <td>pending</td>
             </tr>
           </table>
