@@ -5,6 +5,19 @@ import { CircularProgress } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const CheckOrder = ({ handleAddPro }: any) => {
+  const [valueInput, setValueInput] = useState(false);
+  const [productName, setProductName] = useState("Biscuit");
+  const [quantity, setQuantity] = useState("60");
+  const [description, setDescription] = useState("big");
+  const [userName, setUserName] = useState("Jamo");
+  const [phoneNumber, setPhoneNumber] = useState("0987654321");
+  const [pickupLocation, setPickupLocation] = useState("Sango");
+  const [dropoffLocation, setDropoffLocation] = useState("Ota");
+
+  const handleInputChange = () => {
+    setValueInput(true);
+  };
+
   return (
     <div className="modal">
       <div className="catModal">
@@ -15,45 +28,59 @@ const CheckOrder = ({ handleAddPro }: any) => {
         <div className="line"></div>
         <div className="catModalInput branchInput">
           <h3>Product details</h3>
-          <select name="name">
+          <select
+            name="name"
+            value={productName}
+            style={{ backgroundColor: valueInput ? "white" : "#f5f5f5" }}
+            onChange={(e) => setProductName(e.target.value)}
+          >
             <option value="">Select Product</option>
-            <option value="" selected>
-              Biscuit
-            </option>
-            <option value="">Sweet</option>
-            <option value="">RIce</option>
-            <option value="">Card</option>
+            <option value="Biscuit">Biscuit</option>
+            <option value="Sweet">Sweet</option>
+            <option value="Rice">Rice</option>
+            <option value="Card">Card</option>
           </select>
           <div className="div modalDouble addProduct">
             <input
               type="text"
               placeholder="Quantity"
               name="quantity"
-              value="20"
+              style={{ backgroundColor: valueInput ? "white" : "#f5f5f5" }}
+              value={quantity}
+              readOnly={!valueInput}
+              onChange={(e) => setQuantity(e.target.value)}
             />
             <input
               type="text"
               placeholder="Description"
               name="description"
-              value="big"
+              style={{ backgroundColor: valueInput ? "white" : "#f5f5f5" }}
+              value={description}
+              readOnly={!valueInput}
+              onChange={(e) => setDescription(e.target.value)}
             />
           </div>
 
-          <div className="line"></div>
-          <h3>Product details</h3>
+          <h3>User details</h3>
 
           <div className="div modalDouble addProduct">
             <input
               type="text"
               placeholder="User Name"
               name="unitOfMeasure"
-              value="Jamo"
+              value={userName}
+              style={{ backgroundColor: valueInput ? "white" : "#f5f5f5" }}
+              readOnly={!valueInput}
+              onChange={(e) => setUserName(e.target.value)}
             />
             <input
               type="text"
               placeholder="Phone Number"
               name="unitOfMeasure"
-              value="0987654321"
+              style={{ backgroundColor: valueInput ? "white" : "#f5f5f5" }}
+              value={phoneNumber}
+              readOnly={!valueInput}
+              onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </div>
           <div className="div modalDouble addProduct">
@@ -61,23 +88,35 @@ const CheckOrder = ({ handleAddPro }: any) => {
               type="text"
               placeholder="Pick up Location"
               name="selling"
-              value="Sango"
+              style={{ backgroundColor: valueInput ? "white" : "#f5f5f5" }}
+              value={pickupLocation}
+              readOnly={!valueInput}
+              onChange={(e) => setPickupLocation(e.target.value)}
             />
 
             <input
               type="text"
               placeholder="Drop of Location"
               name="category"
-              value="Ota"
+              style={{ backgroundColor: valueInput ? "white" : "#f5f5f5" }}
+              value={dropoffLocation}
+              readOnly={!valueInput}
+              onChange={(e) => setDropoffLocation(e.target.value)}
             />
           </div>
         </div>
 
         <div className="catModalBtn">
-          <button className="catBtn1" style={{ width: "120px" }}>
+          <button
+            className="catBtn1"
+            style={{ width: "120px" }}
+            onClick={handleAddPro}
+          >
             Accept
           </button>
-          <button className="catBtn3">Modify</button>
+          <button className="catBtn3" onClick={handleInputChange}>
+            Modify
+          </button>
           <button className="catBtn2" onClick={handleAddPro}>
             Decline
           </button>

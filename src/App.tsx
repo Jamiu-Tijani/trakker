@@ -20,12 +20,12 @@ function App() {
       <Routes>
         <Route path="login" element={<Login />} />
         <Route path="/" element={<Order />} />
-        <Route path="/track" element={<Tracking />} />
+        <Route path="track" element={<Tracking />} />
         <Route path="confirm" element={<Confirm />} />
         <Route path="sales" element={<Sales />} />
+        <Route path="finance" element={<Finance />} />
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardHome />} />
-          <Route path="finace" element={<Finance />} />
         </Route>
       </Routes>
     </Router>
