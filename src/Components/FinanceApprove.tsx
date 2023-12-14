@@ -4,18 +4,6 @@ import { ImCancelCircle } from "react-icons/im";
 import pop from "../pop.jpeg";
 
 const FinanceApprove = ({ handleAddPro }: any) => {
-  const [valueInput, setValueInput] = useState(false);
-  const [productName, setProductName] = useState("Biscuit");
-  const [quantity, setQuantity] = useState("60");
-  const [description, setDescription] = useState("big");
-  const [userName, setUserName] = useState("Jamo");
-  const [phoneNumber, setPhoneNumber] = useState("0987654321");
-  const [pickupLocation, setPickupLocation] = useState("Sango");
-  const [dropoffLocation, setDropoffLocation] = useState("Ota");
-
-  const handleInputChange = () => {
-    setValueInput(true);
-  };
 
   return (
     <div className="modal">
@@ -76,7 +64,6 @@ const FinanceApprove = ({ handleAddPro }: any) => {
           </div>
         </div>
 
-
         <div className="catModalBtn">
           <button
             className="catBtn1"
@@ -84,9 +71,6 @@ const FinanceApprove = ({ handleAddPro }: any) => {
             onClick={handleAddPro}
           >
             Accept
-          </button>
-          <button className="catBtn3" onClick={handleInputChange}>
-            Modify
           </button>
           <button className="catBtn2" onClick={handleAddPro}>
             Decline
