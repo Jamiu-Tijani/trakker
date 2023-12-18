@@ -9,6 +9,7 @@ import Confirm from "./Pages/Confirm";
 import Sales from "./Pages/Sales";
 import Finance from "./Pages/Finance";
 import Tracking from "./Pages/Tracking";
+import Invoice from "./Pages/Invoice";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="confirm" element={<Confirm />} />
         <Route path="sales" element={<Sales />} />
         <Route path="finance" element={<Finance />} />
+        <Route path="invoice" element={<Invoice />} />
         <Route path="dashboard" element={<DashboardHome />} />
       </Routes>
     </Router>
