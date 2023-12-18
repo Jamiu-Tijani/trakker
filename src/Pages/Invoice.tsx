@@ -48,6 +48,25 @@ const Invoice = () => {
           </tr>
         </table>
       </div>
+
+      <div className="ttotal">
+        <div className="tPri">
+          <h3>SubTotal:</h3>
+          <p>$550</p>
+        </div>
+        <div className="tPri">
+          <h3>Discount:</h3>
+          <p>$0.00</p>
+        </div>
+        <div className="tPri">
+          <h3>Tax:</h3>
+          <p>$0.00</p>
+        </div>
+        <div className="tPri">
+          <h3>Paid:</h3>
+          <p>$0.00</p>
+        </div>
+      </div>
     </div>
   );
 };
