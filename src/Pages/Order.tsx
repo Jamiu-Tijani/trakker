@@ -24,21 +24,20 @@ const Product = ({ isOpen }: any) => {
             <input type="text" placeholder="Description" name="description" />
           </div>
           <div className="div modalDouble addProduct">
-            <input type="text" placeholder="User Name" name="unitOfMeasure" />
-            <input
-              type="text"
-              placeholder="Phone Number"
-              name="unitOfMeasure"
-            />
-          </div>
-          <div className="div modalDouble addProduct">
-            <input type="text" placeholder="Pick up Location" name="selling" />
-
             <input type="text" placeholder="Drop of Location" name="category" />
+            <input type="date" name="deliveryDate" id="" />
+          </div>
+      
+          <div className="div modalDouble addProduct">
+            <input type="text" placeholder="First Name" name="firstName" />
+            <input type="text" placeholder="Last Name" name="lastName" />
           </div>
           <div className="productBtn">
             <button className="productBtn1">
-              <Link style={{ textDecoration: "none", color: "white" }} to="/track">
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/track"
+              >
                 Order Delivery
               </Link>
             </button>
@@ -53,7 +52,10 @@ const Product = ({ isOpen }: any) => {
             <input type="text" placeholder="Traking ID" name="unitOfMeasure" />
           </div>
           <button className="productBtn1" style={{ width: "120px" }}>
-            <Link style={{ textDecoration: "none", color: "white" }} to="/track">
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              to="/track"
+            >
               Track
             </Link>
           </button>
