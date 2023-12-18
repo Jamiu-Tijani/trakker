@@ -1,0 +1,41 @@
+.invoice {
+  width: 800px;
+  margin: auto;
+  border: 1px solid #0b77c5;
+  padding: 2.5em 1em;
+}
+.topIn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #3e5477;
+  padding-bottom: 2em;
+}
+.topIn .topLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #3e5477;
+  font-weight: bolder;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.topIn p {
+  margin: 0.6em 0 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+.topIn span {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.topIn h2 {
+  color: #3e5477;
+  font-size: 27px;
+  font-weight: 900;
+}
