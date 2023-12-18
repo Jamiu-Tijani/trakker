@@ -55,3 +55,28 @@
 .midTable span {
   margin-bottom: 0.3em;
 }
+.midTab {
+  width: 100%;
+}
+.midTab table {
+  width: 100%;
+}
+.mTableHe {
+  color: #3e5477;
+  text-align: right;
+  border-bottom: 1.5px solid #3e5477;
+}
+.mTableHe th:nth-child(1) {
+  width: 40%;
+  text-align: left;
+}
+
+.mTableBe {
+  color: #3e5477;
+  text-align: right;
+  margin-bottom: 1em;
+}
+.mTableBe td:nth-child(1) {
+  width: 40%;
+  text-align: left;
+}

@@ -21,6 +21,33 @@ const Invoice = () => {
         <span>IBAN: GB86BUKB20554123154041</span>
         <span>SWIFTBIC: BUKBGB22</span>
       </div>
+      <div className="midTab">
+        <table>
+          <tr className="mTableHe">
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Rate</th>
+            <th>Tax</th>
+            <th>Amount</th>
+          </tr>
+          <br />
+          <tr className="mTableBe">
+            <td>Toy</td>
+            <td>03</td>
+            <td>$500</td>
+            <td>0.00</td>
+            <td>$500</td>
+          </tr>
+          <br />
+          <tr className="mTableBe">
+            <td>Drug Paracetamol</td>
+            <td>02</td>
+            <td>$50</td>
+            <td>0.00</td>
+            <td>$50</td>
+          </tr>
+        </table>
+      </div>
     </div>
   );
 };
