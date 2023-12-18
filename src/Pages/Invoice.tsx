@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/invoice.css"
+import "../Styles/invoice.css";
 
 const Invoice = () => {
   return (
@@ -12,6 +12,14 @@ const Invoice = () => {
         </div>
 
         <h2>Invoice Slip</h2>
+      </div>
+      <div className="midTable">
+        <p>Account Details</p>
+        <span>Account holder name: Pi-health limited</span>
+        <span>Account number: 23154041</span>
+        <span>Sort code: 20-55-41</span>
+        <span>IBAN: GB86BUKB20554123154041</span>
+        <span>SWIFTBIC: BUKBGB22</span>
       </div>
     </div>
   );
