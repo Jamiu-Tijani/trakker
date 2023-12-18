@@ -64,7 +64,11 @@
 .mTableHe {
   color: #3e5477;
   text-align: right;
-  border-bottom: 1.5px solid #3e5477;
+}
+.tLine {
+  background-color: #3e5477;
+  width: 100%;
+  height: 4px;
 }
 .mTableHe th:nth-child(1) {
   width: 40%;
