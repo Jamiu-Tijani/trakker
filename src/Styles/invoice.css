@@ -1,8 +1,8 @@
 .invoice {
-  width: 800px;
+  width: 600px;
   margin: auto;
   border: 1px solid #0b77c5;
-  padding: 2.5em 1em;
+  padding: 2.5em 1em 1em;
 }
 .topIn {
   display: flex;
@@ -83,4 +83,41 @@
 .mTableBe td:nth-child(1) {
   width: 40%;
   text-align: left;
+}
+.ttotal {
+  width: 200px;
+  margin-left: auto;
+  margin-top: 2em;
+}
+.tPri {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.3em;
+}
+
+.tPri h3 {
+  margin: 0;
+  color: #3e5477;
+}
+.tPri p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.llinee {
+  border-bottom: 1.5px solid #3e5477;
+}
+.suTop {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: 0.4em;
+  font-size: 24px;
+  background-color: #3e5477;
+  color: #fff;
+  padding: 0.4em 1em;
+  font-weight: 800;
 }
