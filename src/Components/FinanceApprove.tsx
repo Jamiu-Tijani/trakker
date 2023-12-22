@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Styles/Modal.css";
 import { ImCancelCircle } from "react-icons/im";
 import pop from "../pop.jpeg";

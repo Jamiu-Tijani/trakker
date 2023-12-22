@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../Styles/dashboard.css";
 import TopNav from "../layouts/TopNav";
 import {
@@ -8,7 +8,6 @@ import {
 } from "react-icons/ai";
 import { PiNoteDuotone } from "react-icons/pi";
 import { IoIosCash } from "react-icons/io";
-import { FiRefreshCw } from "react-icons/fi";
 
 const DashboardHome = () => {
   return (
