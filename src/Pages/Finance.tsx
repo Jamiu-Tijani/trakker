@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import TopNav from "../layouts/TopNav";
-import { AiOutlinePlusCircle } from "react-icons/ai";
 import "../Styles/order.css";
-import AddOrder from "../Components/AddOrder";
-import { BsSearch, BsPencil } from "react-icons/bs";
-import CheckOrder from "../Components/CheckOrder";
+import { BsSearch } from "react-icons/bs";
 import FinanceApprove from "../Components/FinanceApprove";
 
 const Finance = () => {

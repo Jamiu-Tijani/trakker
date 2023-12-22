@@ -2,8 +2,7 @@ import React from "react";
 import TopNav from "../layouts/TopNav";
 import "../Styles/track.css";
 import "../Styles/order.css";
-import { Link } from "react-router-dom";
-import { FaRegMap, FaUncharted } from "react-icons/fa";
+import { FaUncharted } from "react-icons/fa";
 import { CiBookmarkCheck, CiCreditCard1 } from "react-icons/ci";
 import { FaListCheck } from "react-icons/fa6";
 

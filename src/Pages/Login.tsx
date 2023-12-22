@@ -1,20 +1,16 @@
 import React, { useState } from "react";
 import "../Styles/auth.css";
-// import logo from "../asset/Image/logo.png";
-// import logoBlack from "../asset/Image/logo1.png";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";
-// import axios from "axios";
-import { CircularProgress } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   window.localStorage.clear();
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [passwordVisible, setPasswordVisible] = useState(false);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const togglePasswordVisibility = () => {
     setPasswordVisible((prevVisible) => !prevVisible);

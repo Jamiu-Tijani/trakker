@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../Styles/Modal.css";
 import { ImCancelCircle } from "react-icons/im";
-import { CircularProgress } from "@mui/material";
-import { Link } from "react-router-dom";
+
 
 const CheckOrder = ({ handleAddPro }: any) => {
   const [valueInput, setValueInput] = useState(false);
